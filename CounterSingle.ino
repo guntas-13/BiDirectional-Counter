@@ -25,7 +25,6 @@ void loop(){
   
   duration = pulseIn(echoPin, HIGH);
   distance = (duration/2)/29.1;
-  // Serial.println(distance);
   
   current = distance;
   bool condition = ((current >= previous) && (previous > 0) && (abs(current - previous) > 50));
