@@ -18,3 +18,6 @@ The file [CounterSingle](CounterSingle.ino) captures the same.
 
 ### PART-II: The Bi-Directionality
 Now came the bigger issue to tackle. This hadn't been done before. We thought of replacing the sensors but then a great idea struck. The idea was to keep two variables named **flag1** and **flag2** for each of the sensors. To increment the count, the item should first cross the first sensor and the flag1's value is increased, now we check if the value of **flag1 is greater than flag2**, if it is, only then is the **counter value increased**. Once the item crosses the second sensor, flag2 now also increments, and again we check **if flag2 > flag1**, but now since both have same values, so **we don't decrement the counter value**. This simple but clever algorithm was captured in the [Final Code File](BiDirectional-Final.ino)
+
+### The Video
+Do check out [this video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/guntassingh_saran_iitgn_ac_in/EfQ8WXY99V5NoKbG4jKfxDEBIOwM5wGyzMw49cxELYYIqg?e=TsibHI) for the same !
