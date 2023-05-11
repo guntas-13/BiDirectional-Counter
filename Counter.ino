@@ -3,10 +3,7 @@
 #define trigPin2 11
 #define echoPin2 12
 int counter = 0;
-// int in;
-// double current1 = 0;
 double previous1 = 0;
-// double current2 = 0;
 double previous2 = 0;
 int first = 0;
 int second = 0;
@@ -40,32 +37,6 @@ void loop() {
   Serial.println(current2);
   Serial.println();
 
-  // bool countInc = (current1 >= previous1) && (previous1 > 0) && (abs(current1 - previous1) > 0);
-  // bool countDec = (current2 >= previous2) && (previous2 > 0) && (abs(current2 - previous2) > 0);
-
-  // delay(100);
-  // if (countInc){
-  //   first++;
-  //   Serial.println("First:");
-  //   if (first > second){
-  //     counter++;
-  //     Serial.println(counter);
-  //   }
-    
-  // }
-  // previous1 = current1;
-
-  // delay(100);
-  // if (countDec){
-  //   second++;
-  //   Serial.println("Second:");
-  //   if (second > first){
-  //       counter--;
-  //       Serial.println(counter);
-  //   }
-    
-  // }
-  // previous2 = current2;
 }
 
 double SonarSensor(int trigPin, int echoPin)
