@@ -46,17 +46,7 @@ void loop(){
   duration2 = pulseIn(echoPin2, HIGH);
   distance2 = (duration2/2)/29.1;
   current2 = distance2;
-  
  
-  // lcd.clear();
-  // lcd.print(distance1);
-  // lcd.setCursor(0, 1);
-  // lcd.print(distance2);
-  //  Serial.print("D1:");
-  // Serial.println(distance1);
-  // Serial.print("D2:");
-  // Serial.println(distance2);
-  // Serial.println();
 
   bool condition1 = ((current1 >= previous1) && (previous1 > 0) && (abs(current1 - previous1) > 50));
   bool condition2 = ((current2 >= previous2) && (previous2 > 0) && (abs(current2 - previous2) > 50));
